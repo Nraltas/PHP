@@ -1,4 +1,5 @@
-      function GetIP(){
+<?php 
+function GetIP(){
            if(getenv("HTTP_CLIENT_IP")) {
               $ip = getenv("HTTP_CLIENT_IP");
            } elseif(getenv("HTTP_X_FORWARDED_FOR")) {
@@ -12,3 +13,10 @@
            }
            return $ip;
         }
+?>
+
+<?php 
+      // Geri çağırma Ekrana yazdırma.
+      $ipaddress -> GetIP();
+      echo $ipaddress;
+?>
