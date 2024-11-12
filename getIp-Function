@@ -15,8 +15,4 @@ function GetIP(){
         }
 ?>
 
-<?php 
-      // Geri çağırma Ekrana yazdırma.
-      $ipaddress -> GetIP();
-      echo $ipaddress;
-?>
+
